@@ -98,7 +98,7 @@ for unworked_image in unworked_images:
 
         name = 'Unknown'
         # if True in matches:
-        if distances.argmin(axis=0) > 0.6:
+        if distances.argmin(axis=0) > 0.9:
             # match_index = matches.index(True)
             # name = known_face_names_auto[match_index]
             name = known_face_names_auto[distances.argmin(axis=0)]
